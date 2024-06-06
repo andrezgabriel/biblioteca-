@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emprestimo livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GERENCIAMENTO DE EMPRÉSTIMOS DE LIVROS</h1>
+
+        <section id="user-section">
+            <h2>Cadastro de Usuários</h2>
+            <input type="text" id="user-name" placeholder="Nome">
+            <input type="text" id="user-cpf" placeholder="CPF">
+            <button onclick="addUser()">Cadastrar Usuário</button>
+            <button onclick="addMultipleUsers()">Adicionar Usuários</button>
+            <ul id="user-list"></ul>
+        </section>
+
+        <section id="book-section">
+            <h2>Cadastro de Livros</h2>
+            <input type="text" id="book-title" placeholder="Título">
+            <input type="text" id="book-year" placeholder="Ano de Publicação">
+            <button onclick="addBook()">Cadastrar Livro</button>
+            <button onclick="addMultipleBooks()">Adicionar </button>
+            <ul id="book-list"></ul>
+        </section>
+
+        <section id="loan-section">
+            <h2>Empréstimo de Livros</h2>
+            <select id="user-select">
+                <option value="">Selecione um usuário</option>
+            </select>
+            <select id="book-select">
+                <option value="">Selecione um livro</option>
+            </select>
+            <input type="date" id="loan-date">
+            <button onclick="addLoan()">Registrar Empréstimo</button>
+            <ul id="loan-list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
